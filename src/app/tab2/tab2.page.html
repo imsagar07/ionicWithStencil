@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Filter Data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="background-color: #fff;">
+  <div>
+    <ion-searchbar [debounce]="100" (ionInput)="handleInput($event)" mode="ios"></ion-searchbar>
+  </div>
+  <div style="padding: 10px;"> 
+    <filter-list [keyword]="searchTerm"></filter-list>
+  </div>
+</ion-content>

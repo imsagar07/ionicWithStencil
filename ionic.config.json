@@ -1,0 +1,10 @@
+{
+  "name": "myWebTechTask",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
